@@ -1,0 +1,217 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;900&display=swap'); */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+@font-face {
+    font-family: Maven Pro;
+    src: url(../assets/font/MavenPro-VariableFont_wght.ttf);
+}
+/*
+colores
+    #F49523
+    #64328A
+
+fuentes
+font-family: 'Maven Pro', sans-serif;
+
+*/
+/*inicio de estilos de header*/
+
+header{
+    width: 1440px;
+    margin: 5px 5px 5px 5px;
+    padding-bottom: 10px;
+    border-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-weight: bold;
+}
+.followus{
+    width: 1440px;
+    height: 60px;
+    color: white;
+    background-color: #64328A;
+    display: flex;
+    align-items:center;
+    justify-content: right;
+    margin-top: 10px;
+    padding: 5px 5px 5px 5px;
+    box-sizing: border-box;
+}
+.followus a img{
+    margin-top: 5px;
+    padding: 5px 5px 5px 5px;
+}
+.navbar{
+    
+    background-color: white;
+    font-display: bold;
+    display: flex;
+    list-style: none;
+    column-gap: 25px;
+    align-items: center;
+    justify-content: space-evenly;
+ 
+}
+.logo{
+    display: flex;
+    width: 110px;
+    height: 110px;
+}
+/*Inicio Estilos main*/
+
+a:link{
+    color: black;
+    text-decoration:none;
+}
+
+a:visited{
+    color:black;
+    text-decoration:none;
+
+}
+
+.sectionPrincipal {
+    display: flex;
+    width: 1440px;
+    height: 400px;
+    margin-top: 5px;
+    flex-flow: row wrap;
+    gap:60px;
+    align-items: center;
+    justify-content:space-evenly;
+}
+.sectionPrincipal div img{
+    width: 1440px;
+    height: 400px;
+    padding: 2px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.contenidoPrincipal{
+    margin-top: 20px;
+    padding: 5px 5px 5px 5px;
+    width: 1440px;
+    height: 550px;
+    align-items: center;
+    justify-content:center;
+}
+
+.novedad{
+    display: grid;
+    height: 467px;
+    margin-top: 20px;
+    background-image: url(../assets/img/novedadescuadro.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+}
+
+.novedad div{
+    display: flex;
+    height: 400px;
+    margin: 15px;
+    margin-top: 50px;
+    flex-flow: column;
+    background-image: url(../assets/img/cajaproducto.png);
+    background-repeat: no-repeat;
+}
+.novedad div img{
+    display: flex;
+    width: 180px;
+    height: 200px;
+    margin: 10px;
+    align-items: flex-start;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.sectionSecundaria{
+    display: flex;
+    width: 1440px;
+    height: 300px;
+    margin-top: 30px;
+    flex-flow: row wrap;
+    gap:60px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.sectionSecundaria div img {
+    width: 250px;
+    height: 250px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+.sectionSecundaria div a{
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.contenidoPrincipal h2{
+    font-family: "Maven Pro", sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    font-style: normal;
+    /*texto*/
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 1px 3px black;
+}
+
+.contenidoPrincipal div p{
+    font-family: "Maven Pro", sans-serif;
+    font-weight:2;
+}
+/*Inicio Estilos footer*/
+footer{
+    width: 1440px;
+    background-color: #64328A;
+    color: white;
+}
+
+@media (max-width:660px){
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        gap: 10px;
+        margin-top:-5px ;
+        align-content: center;
+    }
+    .navbar img{
+        margin-top:-82px ;
+        height: 80px;
+        width: 80px;
+        gap: 15px;
+        border-radius: 50%;
+        border-width: 15px;
+        background-color: white;
+    }
+    .navbar a{
+        display: none;
+    }
+    .followus{
+        width: 1440px;
+        height: 90px;
+        color: white;
+        background-color: #64328A;
+        display: flex;
+        align-items:center;
+        justify-content: right;
+        margin-top: 10px;
+        padding: 5px 5px 5px 5px;
+        box-sizing: border-box;
+    }
+}
